@@ -1,0 +1,29 @@
+README.md
+  s_f4e360165b247d::t_dee7ef656fd5d5 87
+firmware/temporal_loom/src/display/screens/chrome.cpp
+  s_f4e360165b247d::t_dea6f7227e41fb 18,23-26
+firmware/temporal_loom/src/core/alert.h
+  s_f4e360165b247d::t_296bdeabb71572 19-21
+  s_f4e360165b247d::t_5030b0f4f4045b 7
+firmware/temporal_loom/src/config/settings.h
+  s_f4e360165b247d::t_9e791fffaf5e6f 41
+  s_f4e360165b247d::t_eb2e1a7abe8e9a 42
+firmware/temporal_loom/src/core/alert.cpp
+  s_f4e360165b247d::t_1111aa298e36de 33-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f7b49aa4489c56e30ca71f9f41be97d44e532dae",
+  "prompts": {},
+  "sessions": {
+    "s_f4e360165b247d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "796e6bc5-8533-42c4-bc30-c246213e2de7",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "rashikakarki <41114269+RashikaKarki@users.noreply.github.com>"
+    }
+  }
+}
