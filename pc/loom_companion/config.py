@@ -1,0 +1,20 @@
+"""Tunable constants: serial settings, refresh intervals, LibreHardwareMonitor endpoint and USB serial chip IDs."""
+
+DEFAULT_BAUD_RATE = 115200
+DEFAULT_SEND_INTERVAL_SECONDS = 0.5
+SLOW_SENSOR_REFRESH_SECONDS = 2.0
+RECONNECT_DELAY_SECONDS = 2.0
+
+LIBRE_HARDWARE_MONITOR_URL = "http://localhost:8085/data.json"
+LIBRE_HARDWARE_MONITOR_TIMEOUT_SECONDS = 0.3
+LIBRE_HARDWARE_MONITOR_CACHE_SECONDS = 1.0
+LIBRE_HARDWARE_MONITOR_RETRY_SECONDS = 10.0
+
+MAX_PROCESS_NAME_LENGTH = 20
+
+KNOWN_USB_SERIAL_VENDOR_IDS = {
+    0x1A86: "WCH CH9102 / CH340",
+    0x10C4: "Silicon Labs CP210x",
+    0x0403: "FTDI",
+}
+USB_SERIAL_DESCRIPTION_HINTS = ("cp210", "ch910", "ch340", "usb serial", "usb-serial", "uart")
