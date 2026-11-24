@@ -50,7 +50,27 @@ Only one program can use the serial port at a time, so close the Arduino Serial 
 
 - **Windows:** for CPU temperature and AMD/Intel GPUs, run [LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) as administrator and enable **Options > Remote Web Server > Run**.
 - **Linux:** add yourself to the serial group with `sudo usermod -aG dialout $USER` and log in again. If CPU temperature shows `--`, install `lm-sensors`.
-- **macOS:** for CPU temperature, install `osx-cpu-temp` (Intel) or [smctemp](https://github.com/narugit/smctemp) (Apple Silicon). If no port appears, install the CP210x or CH9102 USB driver from M5Stack.
+- **macOS:** if no port appears, install the CP210x or CH9102 USB driver from M5Stack.
+
+### CPU temperature on macOS
+
+macOS needs a small helper tool to report CPU temperature. Without it, the temperature shows `--` and everything else still works.
+
+On Apple Silicon (M1 and newer), build and install [smctemp](https://github.com/narugit/smctemp):
+
+```
+git clone https://github.com/narugit/smctemp
+cd smctemp
+sudo make install
+```
+
+On Intel Macs, install `osx-cpu-temp` with Homebrew:
+
+```
+brew install osx-cpu-temp
+```
+
+Run `python3 temporal_loom.py --sensors` to confirm it shows **CPU temperature: smctemp command** (or **osx-cpu-temp command**).
 
 Any value a computer can't report shows as `--` or 0%, and everything else keeps working.
 
