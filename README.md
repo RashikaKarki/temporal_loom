@@ -3,6 +3,25 @@
 A desk-side PC monitor for the **M5Stack Fire**, inspired by the Temporal Loom from *Loki*.
 Your computer's CPU, GPU, RAM and VRAM become a spinning loom of amber threads, and an alarm fires when something runs too hot.
 
+<p align="center">
+  <img src="docs/images/screens/loom-busy.png" alt="The loom screen under load, showing CPU, GPU, RAM and VRAM meters" width="520">
+</p>
+
+## Screens
+
+| Loom | Alarm |
+|---|---|
+| ![Loom screen at idle](docs/images/screens/loom-calm.png) | ![Alarm with red threads and a LOOM AT CAPACITY banner](docs/images/screens/loom-alarm.png) |
+| **History** | **Detail** |
+| ![History graph of the last 40 seconds](docs/images/screens/history.png) | ![Detail screen with exact readings](docs/images/screens/detail.png) |
+
+<details>
+<summary>All screens, including boot, disconnected and no-GPU layouts</summary>
+
+![Overview of every Temporal Loom screen](docs/images/overview.png)
+
+</details>
+
 It has two parts:
 
 - **Firmware** (`firmware/`) runs on the M5Stack and draws the screens.
