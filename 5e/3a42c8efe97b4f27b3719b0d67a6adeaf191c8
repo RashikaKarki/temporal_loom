@@ -1,0 +1,20 @@
+README.md
+  s_f4e360165b247d::t_8704937930ee72 16
+  s_f4e360165b247d::t_3ede01d8fcc81d 10,12-15,17-18,20,22,24-26,28,30-33,35,37,39,41,43-44,46-50,52,54,62,64,66,68-69,71,73,75-76,78,86-93,96,99-101,103,105,109-154,156,158,174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5e3a42c8efe97b4f27b3719b0d67a6adeaf191c8",
+  "prompts": {},
+  "sessions": {
+    "s_f4e360165b247d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "796e6bc5-8533-42c4-bc30-c246213e2de7",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "rashikakarki <41114269+RashikaKarki@users.noreply.github.com>"
+    }
+  }
+}
