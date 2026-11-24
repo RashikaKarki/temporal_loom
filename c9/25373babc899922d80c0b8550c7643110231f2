@@ -1,0 +1,19 @@
+firmware/temporal_loom/src/display/layout.h
+  s_f41e6bab30d03f::t_4d05b74efa8ca3 1-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c925373babc899922d80c0b8550c7643110231f2",
+  "prompts": {},
+  "sessions": {
+    "s_f41e6bab30d03f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6d75eb20-e777-467c-b761-1a419b56ee09",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "rashikakarki <rashikakarki9841@gmail.com>"
+    }
+  }
+}
