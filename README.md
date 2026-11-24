@@ -84,7 +84,7 @@ Any value a computer can't report shows as `--` or 0%, and everything else keeps
 | C | Next screen |
 
 The screens are **LOOM**, **HISTORY** (last 40 seconds) and **DETAIL**.
-The alarm fires when CPU load is over 85%, CPU temperature over 85°C, GPU load over 90%, or GPU temperature over 83°C for 3 seconds.
+The alarm fires when CPU load is over 85%, CPU temperature over 85°C, GPU load over 90%, GPU temperature over 83°C, or RAM usage over 90% for 3 seconds.
 You can change these limits, brightness, volume and LED options in `firmware/temporal_loom/src/config/settings.h`.
 
 ## Project layout

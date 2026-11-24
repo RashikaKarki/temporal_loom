@@ -38,6 +38,8 @@ constexpr float CPU_TEMP_LIMIT = 85;
 constexpr float GPU_LOAD_LIMIT = 90;
 /** GPU temperature in °C above which the GPU is considered critical. Sensible range 60-100. */
 constexpr float GPU_TEMP_LIMIT = 83;
+/** System RAM usage in percent above which memory is considered critical. Range 0-100. */
+constexpr float RAM_USAGE_LIMIT = 90;
 /**
  * Time in ms a reading must stay over its limit before the alarm activates
  * (siren, flashing banner, shaking loom, red LEDs). Filters out short spikes.

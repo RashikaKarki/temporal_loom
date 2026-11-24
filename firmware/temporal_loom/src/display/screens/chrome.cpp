@@ -15,13 +15,15 @@
 
 namespace chrome {
 
-/** Returns the header status: link lost, which processor is critical, or stable (with "M" when muted). */
+/** Returns the header status: link lost, which component is critical, or stable (with "M" when muted). */
 static const char* statusText(const FrameContext& frame) {
   const AlertState& alarm = alert::state();
   if (!frame.linked) return "NO SIGNAL";
   if (alarm.alarmActive) {
-    if (alarm.cpuCritical && alarm.gpuCritical) return "ALL CRIT";
-    return alarm.cpuCritical ? "CPU CRIT" : "GPU CRIT";
+    const int criticalCount = alarm.cpuCritical + alarm.gpuCritical + alarm.ramCritical;
+    if (criticalCount > 1) return "ALL CRIT";
+    if (alarm.cpuCritical) return "CPU CRIT";
+    return alarm.gpuCritical ? "GPU CRIT" : "RAM CRIT";
   }
   return alert::isMuted() ? "STABLE  M" : "STABLE";
 }

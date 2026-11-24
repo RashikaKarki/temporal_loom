@@ -30,7 +30,8 @@ static void evaluateThresholds(bool linked) {
   const float* level = stats::current().smoothed;
   alertState.cpuCritical = level[CPU_LOAD] > settings::CPU_LOAD_LIMIT || level[CPU_TEMP] > settings::CPU_TEMP_LIMIT;
   alertState.gpuCritical = level[GPU_LOAD] > settings::GPU_LOAD_LIMIT || level[GPU_TEMP] > settings::GPU_TEMP_LIMIT;
-  alertState.critical = linked && (alertState.cpuCritical || alertState.gpuCritical);
+  alertState.ramCritical = level[RAM_USAGE] > settings::RAM_USAGE_LIMIT;
+  alertState.critical = linked && (alertState.cpuCritical || alertState.gpuCritical || alertState.ramCritical);
 }
 
 /**

@@ -4,7 +4,7 @@
  * @file alert.h
  * @brief Over-limit detection and the audible alarm.
  *
- * Compares smoothed CPU/GPU load and temperature against the limits in settings.h,
+ * Compares smoothed CPU/GPU load and temperature, and RAM usage, against the limits in settings.h,
  * activates the alarm once a reading has stayed over its limit for ALARM_DELAY_MS,
  * beeps every ALARM_REPEAT_MS, and handles muting and one-off silencing.
  */
@@ -16,7 +16,9 @@ struct AlertState {
   bool cpuCritical = false;
   /** GPU load or GPU temperature is above its configured limit. */
   bool gpuCritical = false;
-  /** Either processor is over its limit while the PC link is up. */
+  /** System RAM usage is above its configured limit. */
+  bool ramCritical = false;
+  /** Any of CPU, GPU or RAM is over its limit while the PC link is up. */
   bool critical = false;
   /** Critical has persisted for at least ALARM_DELAY_MS; drives visual and audible alarm effects. */
   bool alarmActive = false;
