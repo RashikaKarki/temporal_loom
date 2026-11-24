@@ -1,0 +1,19 @@
+README.md
+  s_f4e360165b247d::t_7d209d77b38201 6-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "16f03fbf8f508d492f6eee2fc42b0dfd08e091b2",
+  "prompts": {},
+  "sessions": {
+    "s_f4e360165b247d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "796e6bc5-8533-42c4-bc30-c246213e2de7",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "rashikakarki <41114269+RashikaKarki@users.noreply.github.com>"
+    }
+  }
+}
